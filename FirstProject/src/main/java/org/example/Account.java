@@ -1,9 +1,9 @@
 package org.example;
 
 public class Account {
-    String owner;
-    double balance;
-    double minimumBalance;
+    private String owner;
+    private double balance;
+    private double minimumBalance;
 
     public void deposit(double amount) {
         // implementation
@@ -11,5 +11,34 @@ public class Account {
 
     public void withdraw(double amount) {
         // implementation
+    }
+
+    public double calculateCreditWorthiness() {
+        // implementation
+        return 100;
+    }
+
+    public String getOwner() {
+        return owner;
+    }
+
+    public void setOwner(String owner) {
+        this.owner = owner;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public double getMinBalance() {
+        return minimumBalance;
+    }
+
+    public void setMinimumBalance(double balance) {
+        this.minimumBalance = balance;
     }
 }
