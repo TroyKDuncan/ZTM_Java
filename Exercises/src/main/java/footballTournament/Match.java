@@ -1,7 +1,9 @@
 package footballTournament;
 
 public class Match {
-    public String name;
-    public String teams;
-    public String matches;
+    public Team team1;
+    public Team team2;
+    public int score1;
+    public int score2;
+    public Team winner;
 }
