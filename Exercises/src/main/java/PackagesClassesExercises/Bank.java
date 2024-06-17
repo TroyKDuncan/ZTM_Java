@@ -1,7 +1,12 @@
-package main_bank;
-import bank.BankAccount;
+package PackagesClassesExercises;
 
-public class Main {
+class BankAccount {
+    public int accountNumber;
+    public String accountHolder;
+    public double balance;
+}
+
+public class Bank {
     public static void main(String[] args) {
         BankAccount myAccount = new BankAccount();
 

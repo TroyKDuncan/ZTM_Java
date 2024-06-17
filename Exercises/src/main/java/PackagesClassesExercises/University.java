@@ -1,7 +1,21 @@
-package main_university;
-import university.*;
+package PackagesClassesExercises;
 
-public class Main {
+class Course {
+    public int courseId;
+    public String courseName;
+}
+
+class Enrollment {
+    public Student student;
+    public Course course;
+}
+
+class Student {
+    public int studentId;
+    public String name;
+}
+
+public class University {
     public static void main(String[] args) {
         Student Troy = new Student();
         Course ea1 = new Course();

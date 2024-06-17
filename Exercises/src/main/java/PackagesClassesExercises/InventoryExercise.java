@@ -1,7 +1,23 @@
-package main_inventory;
-import inventory.*;
+package PackagesClassesExercises;
 
-public class Main {
+class Inventory {
+    public Product product;
+    public int quantity;
+}
+
+class Product {
+    public int productId;
+    public String productName;
+    public double price;
+}
+
+class Warehouse {
+    public int warehouseId;
+    public String warehouseName;
+    public String inventories;
+}
+
+public class InventoryExercise {
     public static void main(String[] args) {
         Product iPhone = new Product();
         Inventory iPhoneInventory = new Inventory();
