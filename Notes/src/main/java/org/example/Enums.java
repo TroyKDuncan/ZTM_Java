@@ -8,21 +8,37 @@ public class Enums {
         // type safety
         // more readable
         // memory optimization
+        // you can use == to compare
 
         enum DaysOfWeek {
-            MONDAY,
-            TUESDAY,
-            WEDNESDAY,
-            THURSDAY,
-            FRIDAY,
-            SATURDAY,
-            SUNDAY
+            MONDAY("Monday", 1),
+            TUESDAY("Tuesday", 2),
+            WEDNESDAY("Wednesday", 3),
+            THURSDAY("Thursday", 4),
+            FRIDAY("Friday", 5),
+            SATURDAY("Saturday", 6),
+            SUNDAY("Sunday", 7);
+
+            private String fullName;
+            private int dayNum;
+
+            DaysOfWeek(String fullName, int dayNum) {
+                this.fullName = fullName;
+                this.dayNum = dayNum;
+            }
+
+            public String getFullName() {
+                return fullName;
+            }
+
+            public int getDayNum() {
+                return dayNum;
+            }
         }
 
-        DaysOfWeek today = DaysOfWeek.SATURDAY;
-        // you can use == to compare
-        System.out.println(today == DaysOfWeek.SATURDAY);
-
+        for (DaysOfWeek day : DaysOfWeek.values()) {
+            System.out.println(day.getFullName() + " " + day.getDayNum());
+        }
         // built-in methods: toString(), ordinal(), values()
     }
 }
